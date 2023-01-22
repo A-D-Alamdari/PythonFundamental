@@ -58,9 +58,10 @@ elif computer_choice == 2:
     print(scissors)
 
 if (choice == 0 and computer_choice == 2) \
-        or (choice == 2 and computer_choice == 1) \
-        or (choice == 1 and computer_choice == 0):
+        or choice > computer_choice:
     print("You Win :)")
+elif choice == computer_choice:
+    print("It's a draw!")
 else:
     print("You Lose :(")
 
